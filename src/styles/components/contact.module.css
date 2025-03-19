@@ -147,9 +147,15 @@
   }
 
   @media (max-width: 425px) {
+
+    .formContainer {
+      max-width: none;
+      width: 100%;
+    }
     .contact {
       background-image: none;
       background-color: #2e2e2e;
+      padding-inline: .5rem;
     }
     .contactTitle {
       font-size: 1rem;
@@ -157,6 +163,7 @@
     .contactSubtitle {
       font-size: .8rem;
     }
+
   }
 
   @media (max-width: 320px) {
