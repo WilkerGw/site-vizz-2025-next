@@ -7,3 +7,9 @@
     backdrop-filter: blur(10px);
     background-color: #2e2e2e11;    
 }
+
+@media (max-width: 425px) {
+  .filter {
+    backdrop-filter: blur(0px);
+  }
+}
