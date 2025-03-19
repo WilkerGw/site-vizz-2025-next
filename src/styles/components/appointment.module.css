@@ -77,12 +77,13 @@
   }
 
   .button__agendamento {
-    height: 2rem;
+    height: 2.5rem;
     background-color: #007bff;
     border: none;
     border-radius: .3rem;
     font-family: 'Archivo Black', sans-serif;
     text-transform: uppercase;
     color: #eeeeee;
+    width: 100%;
   }
 }
