@@ -27,3 +27,31 @@
 .label__agendamento {
   margin-right: 1rem;
 }
+
+@media (max-width: 425px) {
+
+  .titleAgendamento {
+    font-size: 1.3rem;
+  }
+
+  .label__agendamento {
+    font-size: 0.8rem;
+  }
+
+  .input__agendamento {
+    height: 2rem;
+    border-radius: 5px;
+    border: none;
+    padding: .5rem;
+  }
+
+  .button__agendamento {
+    height: 2rem;
+    background-color: #007bff;
+    border: none;
+    border-radius: .3rem;
+    font-family: 'Archivo Black', sans-serif;
+    text-transform: uppercase;
+    color: #eeeeee;
+  }
+}

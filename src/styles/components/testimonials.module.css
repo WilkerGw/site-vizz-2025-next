@@ -171,6 +171,10 @@
   .marquee {
     animation-duration: 50s;
   }
+
+  .filter__mobile {
+    display: none;
+  }
 }
 
 @media (max-width: 375px) {

@@ -40,6 +40,7 @@ export default function Exame() {
         <div>
           <label className={styles.label__agendamento}>Nome Completo:</label><br/>
           <input
+          className={styles.input__agendamento}
             type="text"
             name="nomeCompleto"
             value={formData.nomeCompleto}
@@ -50,6 +51,7 @@ export default function Exame() {
         <div>
           <label className={styles.label__agendamento}>WhatsApp:</label><br/>
           <input
+          className={styles.input__agendamento}
             type="text"
             name="whatsapp"
             value={formData.whatsapp}
@@ -60,6 +62,7 @@ export default function Exame() {
         <div>
           <label className={styles.label__agendamento}>Data:</label>
           <input
+          className={styles.input__agendamento}
             type="date"
             name="data"
             value={formData.data}
@@ -70,6 +73,7 @@ export default function Exame() {
         <div>
           <label className={styles.label__agendamento}>Hora:</label>
           <input
+          className={styles.input__agendamento}
             type="time"
             name="hora"
             value={formData.hora}
@@ -77,7 +81,7 @@ export default function Exame() {
             required
           />
         </div>
-        <button type="submit">Agendar</button>
+        <button className={styles.button__agendamento} type="submit">Agendar</button>
       </form>
       {message && <p>{message}</p>}
     </section>

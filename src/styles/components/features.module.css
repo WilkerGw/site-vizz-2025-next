@@ -145,6 +145,17 @@
   .image{
     width: 2rem;
   }
+
+  
+.image:nth-child(2){
+  width: 4rem;
+
+}
+
+.image:nth-child(3){
+  width: 4rem;
+
+}
 }
 
 @media (max-width: 375px) {
