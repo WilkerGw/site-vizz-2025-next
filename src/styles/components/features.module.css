@@ -1,0 +1,156 @@
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../../public/images/casal.webp");
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+  gap: 2rem;
+}
+.features > h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: "Archivo Black", sans-serif;
+  color: #eeeeee;
+  text-shadow: 0px 0px 20px #2e2e2e;
+  margin: .5rem;
+  text-decoration: underline 5px #ffdd56;
+}
+.services {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40rem;
+  min-width: 40rem;
+  border-top-left-radius: .3rem;
+  border-bottom-left-radius: .3rem;
+  text-align: start;
+  padding: 0.5rem;
+  position: relative;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.services h1 {
+  color: #eeeeee;
+  font-family: "Archivo Black", sans-serif;
+  z-index: 1;
+  text-align: start;
+  width: 100%;
+}
+.services p {
+  z-index: 1;
+  color: #eeeeee;
+  opacity: 70%;
+}
+
+.span {
+  color: #ffdd56;
+  font-weight: bold;
+}
+
+.imageGallery {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeeee36;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.image {
+  width: 5rem;
+
+}
+
+.image:nth-child(2){
+  width: 7.5rem;
+
+}
+
+.image:nth-child(3){
+  width: 10rem;
+
+}
+
+
+@media (max-width: 1024px) {
+  .services{
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    height: auto;
+    padding-block: 1rem;
+  }
+  .services{
+    width: 100%;
+    justify-content: center;
+  }
+  .service{
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .features > h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .service h1 {
+    font-size: 1rem;
+  }
+
+  .image {
+    width: 3rem;
+  
+  }
+}
+
+@media (max-width: 425px) {
+
+  .features{
+    gap: 0;
+  }
+  .services{
+    padding: 0rem .5rem;
+  }
+  .features > h1 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    text-align: start;
+  }
+  .services p {
+    font-size: .8rem;
+  }
+  .image{
+    width: 2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .imageGallery {
+    flex-direction: column;
+  }
+  .image:nth-child(1), .image:nth-child(4){
+    width: 4.5rem;
+  }
+}
