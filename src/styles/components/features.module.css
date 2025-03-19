@@ -127,6 +127,8 @@
 @media (max-width: 425px) {
 
   .features{
+    background-image: none;
+    background-color: #2e2e2e;
     gap: 0;
   }
   .services{
