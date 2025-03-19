@@ -2,7 +2,6 @@
 'use client';
 import { useState } from 'react';
 import axios from 'axios';
-import styles from '../styles/components/appointment.module.css';
 
 export default function Exame() {
   const [formData, setFormData] = useState({
