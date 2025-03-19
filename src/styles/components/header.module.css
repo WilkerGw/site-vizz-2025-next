@@ -68,7 +68,7 @@
   transform: translateY(-0.625rem) rotate(-45deg);
 }
 
-a:nth-child(6){
+.link:nth-child(6), .mobileLink:nth-child(6){
   font-weight: bold;
   color: #ffdd56;
 }
