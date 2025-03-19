@@ -1,91 +1,29 @@
-.appointment {
+.agendamento {
   background-color: #2e2e2e;
-  padding: 40px 10px;
-}
-
-.container {
-  width: 80%;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.appointmentTitle {
-  font-size: 2rem;
+  padding: 10rem 2rem;
   color: #eeeeee;
-  font-family: 'Archivo Black', sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
 }
 
-.span__appointment {
+.span__agendamento {
+  font-weight: bold;
   color: #ffdd56;
   text-decoration: underline 5px #ffdd56;
 }
 
-.appointmentSubtitle {
-  font-size: 1.2rem;
-  color: #eeeeee94;
-  margin-bottom: 20px;
+.titleAgendamento {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: "Archivo Black", sans-serif;
+  margin: 0.5rem;
+  text-decoration: underline 5px #ffdd56;
 }
 
-.appointmentForm {
+.form__agendamento{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 1rem;
 }
 
-.formGroup {
-  margin-bottom: 20px;
-  width: 100%;
-  max-width: 400px;
-  position: relative;
+.label__agendamento {
+  margin-right: 1rem;
 }
-
-.formLabel {
-  display: block;
-  margin-bottom: 5px;
-  font-size: 1rem;
-  color: #eeeeee;
-  
-}
-
-.formInput {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-
-.formInput:focus {
-  border-color: #007bff;
-  outline: none;
-}
-
-.formInput[type="date"]:disabled {
-  background-color: #ddd;
-}
-
-.submitButton {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
-}
-
-.submitButton:hover {
-  background-color: #0056b3;
-}
-
-@media (max-width: 425px) {
-  .appointmentTitle {
-    font-size: 1.3rem;
-  }
-  .appointmentSubtitle{
-    font-size: 1rem;
-  }
-}
-

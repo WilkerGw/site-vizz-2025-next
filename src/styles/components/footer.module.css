@@ -102,6 +102,14 @@
     }
   }
 
+  @media (max-width: 425px) {
+    .footerSection:nth-child(2), .footerSection:nth-child(3){
+      align-items: start;
+    }
+  
+    
+  }
+
   @media (min-width: 375px) {
     
   }

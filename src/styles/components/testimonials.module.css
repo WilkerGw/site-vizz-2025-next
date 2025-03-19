@@ -140,11 +140,13 @@
   }
   .galleryTitle {
     font-size: 1.3rem;
+    z-index: 1;
   }
 
   .subtitle {
     font-size: .9rem;
     top: 2rem;
+    z-index: 1;
   }
 
   .card {
@@ -158,10 +160,12 @@
 
   .cardName {
     font-size: 0.9rem;
+    z-index: 1;
   }
 
   .cardComment {
     font-size: 0.8rem;
+    z-index: 1;
   }
 
   .marquee {

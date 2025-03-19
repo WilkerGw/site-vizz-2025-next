@@ -2,6 +2,7 @@
 'use client';
 import { useState } from 'react';
 import axios from 'axios';
+import styles from '../styles/components/appointment.module.css';
 
 export default function Exame() {
   const [formData, setFormData] = useState({
@@ -33,11 +34,11 @@ export default function Exame() {
   };
 
   return (
-    <div style={{ padding: '20px', maxWidth: '400px', margin: '0 auto' }}>
-      <h1>Agendamento</h1>
-      <form onSubmit={handleSubmit}>
+    <section id="agendamento" className={styles.agendamento}>
+      <h1 className={styles.titleAgendamento}>Agende seu <span className={styles.span__agendamento}>Exame Gratuito</span>!</h1>
+      <form onSubmit={handleSubmit} className={styles.form__agendamento}>
         <div>
-          <label>Nome Completo:</label>
+          <label className={styles.label__agendamento}>Nome Completo:</label><br/>
           <input
             type="text"
             name="nomeCompleto"
@@ -47,7 +48,7 @@ export default function Exame() {
           />
         </div>
         <div>
-          <label>WhatsApp:</label>
+          <label className={styles.label__agendamento}>WhatsApp:</label><br/>
           <input
             type="text"
             name="whatsapp"
@@ -57,7 +58,7 @@ export default function Exame() {
           />
         </div>
         <div>
-          <label>Data:</label>
+          <label className={styles.label__agendamento}>Data:</label>
           <input
             type="date"
             name="data"
@@ -67,7 +68,7 @@ export default function Exame() {
           />
         </div>
         <div>
-          <label>Hora:</label>
+          <label className={styles.label__agendamento}>Hora:</label>
           <input
             type="time"
             name="hora"
@@ -79,6 +80,6 @@ export default function Exame() {
         <button type="submit">Agendar</button>
       </form>
       {message && <p>{message}</p>}
-    </div>
+    </section>
   );
 }
