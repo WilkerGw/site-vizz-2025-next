@@ -1,3 +1,5 @@
+/* styles/components/appointment.module.css */
+
 .agendamento {
   background-color: #2e2e2e;
   padding: 10rem .5rem;
@@ -18,7 +20,7 @@
   text-decoration: underline 5px #ffdd56;
 }
 
-.form__agendamento{
+.form__agendamento {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -57,9 +59,7 @@
   }
 }
 
-
 @media (max-width: 425px) {
-
   .titleAgendamento {
     font-size: 1rem;
   }
