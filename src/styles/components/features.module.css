@@ -65,8 +65,9 @@
 }
 
 .span {
-  color: #ffcc00;
+  color: #ffdd56;
   font-weight: bold;
+  text-shadow: 0px 0px 20px #2e2e2e;
 }
 
 .imageService {

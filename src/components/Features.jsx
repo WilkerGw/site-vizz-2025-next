@@ -17,8 +17,8 @@ const Features = () => {
             image: "/images/mulher-sentada.png",
           },
           {
-            title: "Fabricação de",
-            highlight: "Óculos de Grau Personalizados",
+            title: "Fabricação de Óculos de Grau",
+            highlight: "Personalizados",
             description:
               "Criamos óculos sob medida para você! Escolha a armação perfeita e conte com lentes adaptadas às suas necessidades.",
             image: "/images/homem-sentado.png",
