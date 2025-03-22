@@ -10,7 +10,7 @@ const Hero = () => {
       </div>
       <div className="container__infos-header">
         <h2>O MELHOR <span className={styles.span}>PREÇO</span> E <span className={styles.span}>QUALIDADE</span> DA REGIÃO</h2>
-        <p>Agende sua consulta, faça um orçamento e <span className={styles.span}>NÃO JOGUE DINHEIRO FORA</span>.</p>
+        <p>Faça um orçamento e <span className={styles.span}>NÃO JOGUE DINHEIRO FORA</span>.</p>
         <a href="#agendamento"><button className={styles.ctaButton}>Agende sua Consulta</button></a>
       </div>
       <Faixa/>

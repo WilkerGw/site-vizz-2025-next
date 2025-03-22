@@ -1,6 +1,5 @@
 /* Marquee.module.css */
 .marqueeContainer {
-  overflow: hidden;
   background: linear-gradient(10deg, #ffdd56,#ffe680, #ffec9f);
   color: #2e2e2e;
   font-family: 'Archivo Black', sans-serif;
@@ -12,6 +11,9 @@
   margin-top: 1rem;
   position: absolute;
   bottom: 0;
+  flex-wrap: wrap;
+  overflow: hidden;
+
 }
 
 .marqueeContent {
@@ -44,6 +46,7 @@
 
 .logoFaixa {
   width: 3rem;
+  min-width: 3rem;
   margin-inline: 1rem;
 }
 
