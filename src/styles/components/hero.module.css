@@ -2,8 +2,9 @@
   background-color: #2e2e2e;
   color: #eeeeee;
   text-align: center;
-  padding: 100px 20px;
   height: 100vh;
+  padding-top: 7rem;
+  justify-content: space-between;
 }
 
 .logo__hero {
@@ -46,6 +47,7 @@
 @media (max-width: 1075px) {
   .hero {
     height: auto;
+    padding-bottom: 3rem;
   }
 }
 

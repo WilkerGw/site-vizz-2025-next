@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '../styles/components/hero.module.css';
+import Faixa from './Faixa';
 
 const Hero = () => {
   return (
@@ -12,6 +13,7 @@ const Hero = () => {
         <p>Agende sua consulta, faça um orçamento e <span className={styles.span}>NÃO JOGUE DINHEIRO FORA</span>.</p>
         <a href="#agendamento"><button className={styles.ctaButton}>Agende sua Consulta</button></a>
       </div>
+      <Faixa/>
     </section>
   );
 };
