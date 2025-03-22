@@ -10,10 +10,13 @@
   width: 100%;
   box-sizing: border-box;
   margin-top: 1rem;
+  position: absolute;
+  bottom: 0;
 }
 
 .marqueeContent {
   display: flex;
+  align-items: center;
   white-space: nowrap;
   animation: marquee 20s linear infinite;
 }
@@ -28,7 +31,6 @@
 
 .spanFaixa {
   font-size: 1.3rem;
-  text-decoration: underline 5px rgba(255, 0, 0, 0.373);
 }
 
 @keyframes marquee {
@@ -38,6 +40,11 @@
   100% {
     transform: translateX(-100%);
   }
+}
+
+.logoFaixa {
+  width: 3rem;
+  margin-inline: 1rem;
 }
 
 

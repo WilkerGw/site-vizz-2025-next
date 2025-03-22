@@ -2,7 +2,6 @@
 'use client';
 import React, { useState } from 'react';
 import styles from '../styles/components/contact.module.css';
-import ServicesFilter from './Services-filter';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -38,7 +37,6 @@ const Contact = () => {
         <p className={styles.contactSubtitle}>Fique à vontade para entrar em contato conosco.</p>
         <div className={styles.contactContent}>
           <div className={styles.formContainer}>
-            <ServicesFilter/>
             <form onSubmit={handleSubmit} className={styles.contactForm}>
               <div className={styles.formGroup}>
                 <label htmlFor="name" className={styles.formLabel}>Nome</label>

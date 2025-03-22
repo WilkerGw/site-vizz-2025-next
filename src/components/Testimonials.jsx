@@ -1,7 +1,6 @@
 'use client';
 import React, { useRef } from 'react';
 import styles from '../styles/components/testimonials.module.css';
-import ServicesFilter from './Services-filter'; 
 
 const Testimonials = () => {
   const testimonials = [
@@ -70,7 +69,6 @@ const Testimonials = () => {
           <div className={styles.marquee} ref={containerRef} onMouseEnter={pauseMarquee} onMouseLeave={startMarquee}>
             {[...testimonials, ...testimonials].map((testimonial, index) => (
               <div key={index} className={styles.card}>
-               <ServicesFilter className={styles.filter__mobile}/>
                 <h3 className={styles.cardName}>{testimonial.name}</h3>
                 <p className={styles.cardComment}>{testimonial.comment}</p>
               </div>
