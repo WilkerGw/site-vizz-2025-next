@@ -6,6 +6,7 @@
   justify-content: center;
   position: relative;
   height: 100vh;
+  max-height: 633px;
   overflow: hidden;
   background-color: #eeeeee;
   padding: 1rem;
