@@ -91,10 +91,7 @@
 }
 
 @media (max-width: 768px) {
-  .logoDestaques {
-    width: 18rem;
-    margin-top: 0rem;
-  }
+
 
   .item {
     transform: rotateY(calc((var(--position) - 1) * (360deg / var(--quantity))))
@@ -117,6 +114,11 @@
 }
 
 @media (max-width: 425px) {
+
+  .destaques {
+    height: auto;
+  }
+
   .destaqueTitle {
     font-size: 1rem;
   }
@@ -126,13 +128,13 @@
   }
 
   .logoDestaques {
-    top: 52%;
-    width: 10rem;
+    width: 20rem;
+    top: 50%;
   }
 
   .item {
     transform: rotateY(calc((var(--position) - 1) * (360deg / var(--quantity))))
-      translateZ(150px);
+      translateZ(200px);
     backface-visibility: visible;
   }
 
