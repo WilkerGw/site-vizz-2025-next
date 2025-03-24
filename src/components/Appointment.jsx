@@ -1,4 +1,3 @@
-// pages/index.js
 'use client';
 import { useState } from 'react';
 import axios from 'axios';
@@ -8,7 +7,7 @@ export default function Exame() {
   const [formData, setFormData] = useState({
     nomeCompleto: '',
     whatsapp: '',
-    data: '',
+    data: '2025-04-03', // Data fixa
     hora: '',
   });
   const [message, setMessage] = useState('');
@@ -41,10 +40,6 @@ export default function Exame() {
   const validateForm = () => {
     if (!formData.nomeCompleto.split(' ').filter(word => word).length >= 2) {
       setMessage('O nome completo deve conter pelo menos duas palavras.');
-      return false;
-    }
-    if (formData.data !== '2025-04-03') {
-      setMessage('A data disponível é 03/04/2025.');
       return false;
     }
     if (!/^(\(?\d{2}\)?\s?)?(\d{4,5}\-\d{4})$/.test(formData.whatsapp)) {
@@ -91,8 +86,22 @@ export default function Exame() {
     }
   }
 
+  // Função para formatar a data no formato dd/mm/yyyy
+  const formatDate = (dateString) => {
+    const date = new Date(dateString);
+    const day = String(date.getUTCDate()).padStart(2, '0'); // Usar UTC para evitar problemas de fuso horário
+    const month = String(date.getUTCMonth() + 1).padStart(2, '0'); // Mês começa em 0, então adicionamos 1
+    const year = date.getUTCFullYear();
+    return `${day}/${month}/${year}`;
+  };
+
   return (
     <section id="agendamento" className={styles.agendamento}>
+      {loading && (
+        <div className={styles.loadingOverlay}>
+          <div className={styles.spinner}></div>
+        </div>
+      )}
       <h1 className={styles.titleAgendamento}>Agende seu <span className={styles.span__agendamento}>Exame Gratuito</span>!</h1>
       <form onSubmit={handleSubmit} className={styles.form__agendamento}>
         <div>
@@ -119,20 +128,17 @@ export default function Exame() {
           />
         </div>
         <div>
-          <label className={styles.label__agendamento}>Data:</label>
+          <label className={styles.label__agendamento}>Data:'''''' {formatDate(formData.data)}.</label><br/>
           <input
             className={styles.input__agendamento}
-            type="date"
+            type="text"
             name="data"
-            value={formData.data}
-            onChange={handleChange}
-            required
-            min="2025-04-03"
-            max="2025-04-03"
+            value={formatDate(formData.data)}
+            readOnly
           />
         </div>
         <div>
-          <label className={styles.label__agendamento}>Hora:</label>
+          <label className={styles.label__agendamento}>Horário:</label><br/>
           <select
             className={styles.input__agendamento}
             name="hora"
@@ -147,14 +153,14 @@ export default function Exame() {
           </select>
         </div>
         <button className={styles.button__agendamento} type="submit">
-          {loading ? 'Carregando...' : 'Agendar'}
+          Agendar
         </button>
       </form>
       {message && <p style={{ color: message.includes('sucesso') ? 'green' : 'red' }}>{message}</p>}
       {confirmation && (
         <div>
           <p>Confirmação de número de WhatsApp: {confirmation.whatsapp}</p>
-          <p>Data do exame: {confirmation.data}</p>
+          <p>Data do exame: {formatDate(confirmation.data)}</p>
           <p>Hora do exame: {confirmation.hora}</p>
         </div>
       )}
