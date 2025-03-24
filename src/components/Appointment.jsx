@@ -102,7 +102,7 @@ export default function Exame() {
           <div className={styles.spinner}></div>
         </div>
       )}
-      <h1 className={styles.titleAgendamento}>Agende seu <span className={styles.span__agendamento}>Exame Gratuito</span>!</h1>
+      <h1 className={styles.titleAgendamento}>Agende seu <span className={styles.span__agendamento}>Exame Gratuito</span></h1>
       <form onSubmit={handleSubmit} className={styles.form__agendamento}>
         <div>
           <label className={styles.label__agendamento}>Nome Completo:</label><br/>

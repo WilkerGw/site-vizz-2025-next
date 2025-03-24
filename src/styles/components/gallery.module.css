@@ -1,32 +1,31 @@
 /* gallery.module.css */
 .destaques {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: relative;
   height: 100vh;
   overflow: hidden;
   background-color: #eeeeee;
+  padding: 1rem;
 }
 
 .destaqueTitle {
-  width: 100%;
-  margin: 0 auto;
-  position: absolute;
-  margin: 1rem;
   font-family: "Archivo Black", sans-serif;
   text-transform: uppercase;
   color: #2e2e2e;
+  font-size: 2rem;
 }
 
 .destaqueText {
-  position: absolute;
-  margin: 3rem 1rem;
   opacity: 70%;
 }
 
 .destSpan {
   color: #ffdd56;
   font-weight: bold;
-  text-shadow: 0px 0px 5px #2e2e2e52;
+  text-shadow: 0px 0px 5px #2e2e2e;
 }
 
 .banner {
@@ -43,7 +42,7 @@
   position: relative;
   width: 200px;
   height: 250px;
-  top: 5%;
+  bottom: 15%;
   transform-style: preserve-3d;
   transform: perspective(1000px);
   animation: autoRun 20s linear infinite;
@@ -57,12 +56,14 @@
   transform: rotateY(calc((var(--position) - 1) * (360deg / var(--quantity))))
     translateZ(350px);
   backface-visibility: visible; /* Alterado de 'hidden' para 'visible' */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .img {
-  width: 10rem;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 12rem;
+  filter: drop-shadow(0px 0px 10px #2e2e2e36);
 }
 
 .containerDestaque {
@@ -81,10 +82,10 @@
 
 @keyframes autoRun {
   from {
-    transform: perspective(1000px) rotateX(-28deg) rotateY(0deg);
+    transform: perspective(1000px) rotateX(-20deg) rotateY(0deg);
   }
   to {
-    transform: perspective(1000px) rotateX(-28deg) rotateY(360deg);
+    transform: perspective(1000px) rotateX(-20deg) rotateY(360deg);
   }
 }
 
@@ -106,10 +107,10 @@
 
   @keyframes autoRun {
     from {
-      transform: perspective(1000px) rotateX(-32deg) rotateY(0deg);
+      transform: perspective(1000px) rotateX(-40deg) rotateY(0deg);
     }
     to {
-      transform: perspective(1000px) rotateX(-32deg) rotateY(360deg);
+      transform: perspective(1000px) rotateX(-40deg) rotateY(360deg);
     }
   }
 }
