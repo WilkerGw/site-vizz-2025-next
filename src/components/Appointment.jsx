@@ -128,7 +128,7 @@ export default function Exame() {
           />
         </div>
         <div>
-          <label className={styles.label__agendamento}>Data:'''''' {formatDate(formData.data)}.</label><br/>
+          <label className={styles.label__agendamento}>Data:{formatDate(formData.data)}.</label><br/>
           <input
             className={styles.input__agendamento}
             type="text"
