@@ -16,6 +16,12 @@
 
 }
 
+.linkFaixa {
+  width: 100%;
+  color: #2e2e2e;
+  text-decoration: none;
+}
+
 .marqueeContent {
   display: flex;
   align-items: center;
