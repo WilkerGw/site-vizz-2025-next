@@ -135,10 +135,6 @@
 }
 
 @media (max-width: 425px) {
-  .testimonials{
-    background-image: none;
-    background-color: #2e2e2e;
-  }
   .galleryTitle {
     font-size: 1rem;
   }
