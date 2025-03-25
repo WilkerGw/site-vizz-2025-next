@@ -10,6 +10,7 @@ import '../styles/animations.css'; // Importa animações globais
 import Gallery from '@components/Gallery';
 import Contact from '@components/Contact';
 import Appointment from '@components/Appointment';
+import Compra from '@components/Compra';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Header />
       <Hero />
       <Features />
+      <Compra/>
       <Gallery/>
       <Contact/>
       <Appointment/>

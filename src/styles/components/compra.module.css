@@ -1,0 +1,84 @@
+.compraSegura {
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-size: 2rem;
+  font-family: "Archivo Black", sans-serif;
+  text-transform: uppercase;
+  color: #2e2e2e;
+  width: 100%;
+
+}
+
+.span {
+  color: #ffdd56;
+  font-weight: bold;
+  text-shadow: 0px 0px 5px #2e2e2e;
+}
+
+.imgContainer,
+.infosContainer {
+  display: flex;
+  width: 100%;
+}
+
+.infosContainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    min-width: 385px;
+}
+
+.imgContainer {
+    align-items: center;
+    width: 30%;
+    min-width: 231px;
+}
+
+.img {
+    width: 100%;
+}
+
+.text {
+    opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+    .compraSegura {
+        height: auto;
+        padding: .5rem;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .infosContainer {
+        min-width: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .title{
+        font-size: 1rem;
+    }
+    
+    .imgContainer {
+        min-width: 100%;
+        width: 100%;
+    }
+
+    
+    .text {
+        font-size: .8rem;
+        opacity: 0.7;
+    }
+
+}
