@@ -25,10 +25,6 @@
   z-index: 1;
 }
 
-a:-webkit-any-link {
-  color: #2e2e2e;
-}
-
 .destSpan {
   color: #ffdd56;
   font-weight: bold;
