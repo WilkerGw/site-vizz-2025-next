@@ -3,12 +3,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 4rem 2rem;
+  padding: .5rem;
   position: relative;
   height: 100vh;
-  background-image: url("../../../public/images/pessoas.webp");
-  background-attachment: fixed;
   overflow: hidden;
+  background-color: #eeeeee;
 }
 
 .container__testimonials {
@@ -21,22 +20,24 @@
   font-size: 2rem;
   text-transform: uppercase;
   font-family: "Archivo Black", sans-serif;
-  color: #eeeeee;
-  text-shadow: 0px 0px 20px #2e2e2e;
-  margin: 0.5rem;
-  text-decoration: underline 5px #ffdd56;
+  color: #2e2e2e;
   position: absolute;
-  top:0;
-  left: 0;
+  top:5px;
+  left: 5px;
 }
 
 .subtitle {
   z-index: 1;
-  color: #eee;
+  color: #2e2e2e;
   position: absolute;
-  top: 4rem;
-  left: 0;
-  margin: .5rem;
+  top:50px;
+  left: 5px;
+}
+
+.spanTestm {
+  color: #ffdd56;
+  font-weight: bold;
+  text-shadow: 0px 0px 5px #2e2e2e;
 }
 
 .container__testimonials {
@@ -55,13 +56,10 @@
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   flex-shrink: 0;
   border-radius: 0.5rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
   width: 250px;
-  text-align: center;
   transition: transform 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -78,11 +76,13 @@
   color: #ffdd56;
   margin-bottom: 0.5rem;
   z-index: 1;
+  font-family: 'Archivo Black', sans-serif;
+  text-shadow: 0px 0px 5px #2e2e2e;
 }
 
 .cardComment {
   font-size: 1rem;
-  color: #eeeeee;
+  color: #2e2e2e;
   z-index: 1;
 }
 

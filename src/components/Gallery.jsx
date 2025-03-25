@@ -5,7 +5,7 @@ const Gallery = () => {
   return (
     <section id="destaques" className={styles.destaques}>
       <h1 className={styles.destaqueTitle}>Compre <span className={styles.destSpan}>sem sair de casa</span></h1>
-      <p className={styles.destaqueText}>Visite a loja virtual e confira mais modelos!</p>
+      <p className={styles.destaqueText}><a href="https://oticasvizz.lojavirtualnuvem.com.br/" className="linkDestaques" target="_blank">Visite a loja virtual</a> e confira mais modelos!</p>
       <div className={styles.banner}>
         <div className={styles.slider} style={{ "--quantity": 10 }}>
           <div className={styles.item} style={{ "--position": 1 }}>

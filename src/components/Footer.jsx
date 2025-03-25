@@ -9,9 +9,9 @@ const Footer = () => {
           <div className={styles.footerSection}>
             <p className={styles.footerText}>Av Do Oratório, 4869</p>
             <p className={styles.footerText}>
-              Vila Industrial, São Paulo - SP, 03221-200
+              Vila Industrial, São Paulo - SP, 03221200
             </p>
-            <p className={styles.footerText}>Telefone: (11) 2362-8799</p>
+            <p className={styles.footerText}>Telefone: (11) 23628799</p>
             <p className={styles.footerText}>Email: oticasvizz@gmail.com</p>
           </div>
           <div className={styles.footerSection}>

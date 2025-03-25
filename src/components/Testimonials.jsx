@@ -62,7 +62,7 @@ const Testimonials = () => {
 
   return (
     <section id="depoimentos" className={styles.testimonials}>
-        <h2 className={styles.galleryTitle}>O Que Nossos Clientes Dizem</h2>
+        <h2 className={styles.galleryTitle}>O Que Nossos <span className={styles.spanTestm}>Clientes Dizem</span></h2>
         <p className={styles.subtitle}>Confira os depoimentos de quem já experimentou nossos serviços.</p>
       <div className={styles.container__testimonials}>
         <div className={styles.container__testimonials}>
