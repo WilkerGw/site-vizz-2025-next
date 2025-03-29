@@ -11,6 +11,7 @@ import Gallery from '@components/Gallery';
 import Contact from '@components/Contact';
 import Appointment from '@components/Appointment';
 import Compra from '@components/Compra';
+import WhatsApp from '@components/WhatsApp';
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       <Contact/>
       <Appointment/>
       <Testimonials />
+      <WhatsApp/>
       <Footer />
     </>
   );

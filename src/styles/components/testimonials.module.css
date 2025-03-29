@@ -21,17 +21,15 @@
   text-transform: uppercase;
   font-family: "Archivo Black", sans-serif;
   color: #2e2e2e;
-  position: absolute;
-  top:5px;
-  left: 5px;
+  text-align: start;
+  width: 100%;
 }
 
 .subtitle {
-  z-index: 1;
   color: #2e2e2e;
-  position: absolute;
-  top:50px;
-  left: 5px;
+  margin-block: 1rem;
+  text-align: start;
+  width: 100%;
 }
 
 .spanTestm {
@@ -99,7 +97,7 @@
 @media (max-width: 768px) {
 
   .testimonials {
-    height: auto;
+    height: 100vh;
     padding-top: 7rem;
   }
 
@@ -108,7 +106,6 @@
   }
 
   .subtitle {
-    top: 2.5rem;
     font-size: 1rem;
   }
 
@@ -141,7 +138,6 @@
 
   .subtitle {
     font-size: .8rem;
-    top: 3rem;
   }
 
   .card {
