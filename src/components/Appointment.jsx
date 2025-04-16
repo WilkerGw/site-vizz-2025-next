@@ -8,7 +8,7 @@ export default function Exame() {
   const [formData, setFormData] = useState({
     nomeCompleto: "",
     whatsapp: "",
-    data: "2025-04-03", // Data fixa
+    data: "2025-04-23", // Data fixa
     hora: "",
   });
   const [message, setMessage] = useState("");
