@@ -5,13 +5,13 @@ import Faixa from './Faixa';
 const Hero = () => {
   return (
     <section id="home" className={`${styles.hero} fade-in`}>
-      <div className='container__logo-header'>
-        <img src="/images/logo.png" alt="" className={styles.logo__hero} />
+      <div className={styles.containerLogo}>
+        <img src="/images/logo.png" alt="" className={styles.logoHero} />
       </div>
-      <div className="container__infos-header">
+      <div className={styles.containerInfos}>
         <h2>O MELHOR <span className={styles.span}>PREÇO</span> E <span className={styles.span}>QUALIDADE</span> DA REGIÃO</h2>
         <p>Faça um orçamento e <span className={styles.span}>NÃO JOGUE DINHEIRO FORA</span>.</p>
-        <a href="#agendamento"><button className={styles.ctaButton}>Agende sua Consulta</button></a>
+        <a href="#agendamento" className={styles.linkBtn}><button className={styles.btn}>Agende sua Consulta</button></a>
       </div>
       <Faixa/>
     </section>

@@ -1,107 +1,52 @@
 .hero {
-  background-color: #2e2e2e;
-  color: #eeeeee;
-  text-align: center;
-  padding-top: 7rem;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem .5rem;
+  align-items: center;
   position: relative;
-  height: 100vh;
+  height: 90vh;
 }
 
-.logo__hero {
-  width: 15rem;
-  filter: drop-shadow(0px 0px 2px #ffdd70);
+.containerLogo {
+  width: 12rem;
+  max-width: 12rem;
 }
 
-.hero h2 {
-  font-family: 'Archivo Black', sans-serif;
-  font-size: 48px;
-  margin-bottom: 20px;
+.logoHero {
+  width: 100%;
+}
+
+.containerInfos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: var(--branco);
+  font-size: 1rem;
 }
 
 .span {
-  color: #ffdd56;
-  font-weight: bold;
+  color: var(--amarelo);
 }
 
-.hero p {
-  font-size: 18px;
-  margin-bottom: 30px;
+.linkBtn {
+  width: 100%;
 }
 
-.ctaButton {
-  background: #007bff;
-  color: #eeeeee;
+.btn {
+  background-color: var(--amarelo);
+  color: var(--preto);
+  padding: .5rem 1rem;
+  border-radius: 0.5rem;
   border: none;
-  padding: 15px 30px;
-  font-size: 18px;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: all 0.5s ease-in-out;
+  margin-top: 1rem;
+  width: 100%;
+  height: 3.5rem;
+  font-size: 1rem;
 }
 
-.ctaButton:hover {
-  background: #0056b3;
-  box-shadow: 0px 0px 5px #eeeeee;
-}
-
-@media (max-width: 771px) {
+@media (min-width: 768px) {
   .hero {
     height: 100vh;
   }
-}
-
-@media (max-width: 768px) {
-
-  .hero {
-    padding: 100px 0px 20px 0px;
-    height: 100vh;
-  }
-
-  .logo__hero {
-    width: 10rem;
-  }
-
-  .hero h2 {
-    font-size: 36px;
-  }
-
-  .hero p {
-    margin: 0;
-  }
-
-  .ctaButton{
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 425px) {
-
-  .hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0rem .5rem 2rem .5rem;
-    height: 100vh;
-  }
-
-  .logo__hero {
-    width: 10rem;
-  }
-  .hero h2 {
-    font-size: 1.3rem;
-  }
-  .hero p {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-  }
-
-  .ctaButton{
-    width: 100%;
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 375px) {
-
 }
