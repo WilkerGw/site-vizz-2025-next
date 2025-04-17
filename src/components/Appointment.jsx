@@ -18,9 +18,7 @@ export default function Exame() {
   const handleChange = (e) => {
     const { name, value } = e.target;
     if (name === "whatsapp") {
-      // Remover caracteres não numéricos
       const numericValue = value.replace(/\D/g, "");
-      // Formatar o número de WhatsApp
       let formattedValue = "";
       if (numericValue.length > 0)
         formattedValue = `(${numericValue.slice(0, 2)})`;
@@ -69,7 +67,7 @@ export default function Exame() {
         "https://agendamento-backend-xoup.onrender.com/api/agendamento",
         {
           ...formData,
-          whatsapp: formData.whatsappRaw, // Enviar o valor não formatado
+          whatsapp: formData.whatsappRaw,
         }
       );
       setMessage(response.data.message);
@@ -122,7 +120,7 @@ export default function Exame() {
             Agende seu{" "}
             <span className={styles.span__agendamento}>Exame Gratuito</span>
           </h1>
-          <form onSubmit={handleSubmit} className={styles.form__agendamento}>
+          <form onSubmit={handleSubmit} className={styles.formAgendamento}>
             <div>
               <label className={styles.label__agendamento}>
                 Nome Completo:
@@ -167,7 +165,7 @@ export default function Exame() {
               <label className={styles.label__agendamento}>Horário:</label>
               <br />
               <select
-                className={styles.input__agendamento}
+    
                 name="hora"
                 value={formData.hora}
                 onChange={handleChange}
@@ -175,7 +173,7 @@ export default function Exame() {
               >
                 <option value="">Selecione a hora</option>
                 {availableHours.map((hour) => (
-                  <option key={hour} value={hour}>
+                  <option key={hour} value={hour} >
                     {hour}
                   </option>
                 ))}
@@ -198,11 +196,11 @@ export default function Exame() {
             </div>
           )}
         </div>
-        <div className={styles.imgAgendamento__container}>
+        <div className={styles.imgContainer}>
           <img
             src="./images/homem-fone.png"
             alt=""
-            className={styles.img__agendamento}
+            className={styles.img}
           />
         </div>
       </div>

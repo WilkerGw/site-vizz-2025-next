@@ -7,6 +7,7 @@ const Footer = () => {
       <div className={styles.container}>
         <div className={styles.footerContent}>
           <div className={styles.footerSection}>
+            <img src="/images/logo.png" alt="logo vizz" className={styles.logo}/>
             <p className={styles.footerText}>Av Do Oratório, 4869</p>
             <p className={styles.footerText}>
               Vila Industrial, São Paulo - SP, 03221200
@@ -46,7 +47,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="/images/face.png" alt="Facebook" />
+                <img src="/images/face.png" alt="Facebook" className={styles.imgSocial}/>
               </a>
               <a
                 href="https://instagram.com"
@@ -54,10 +55,10 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="/images/insta.png" alt="Instagram" />
+                <img src="/images/insta.png" alt="Instagram" className={styles.imgSocial}/>
               </a>
               <a href="https://wa.me/551123628799" className={styles.socialIcon}>
-                <img src="/images/whats.png" alt="" />
+                <img src="/images/whats.png" alt="wahtsapp" className={styles.imgSocial}/>
               </a>
             </div>
           </div>

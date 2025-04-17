@@ -8,26 +8,11 @@
   height: 100vh;
   max-height: 633px;
   overflow: hidden;
-  background-color: #eeeeee;
-}
-
-.destaqueTitle {
-  font-family: "Archivo Black", sans-serif;
-  text-transform: uppercase;
-  color: #2e2e2e;
-  font-size: 2rem;
-  margin-top: 3rem;
 }
 
 .destaqueText {
   opacity: 70%;
   z-index: 1;
-}
-
-.destSpan {
-  color: #ffdd56;
-  font-weight: bold;
-  text-shadow: 0px 0px 5px #2e2e2e;
 }
 
 .banner {
@@ -118,14 +103,6 @@
 
   .destaques {
     height: auto;
-  }
-
-  .destaqueTitle {
-    font-size: 1rem;
-  }
-  
-  .destaqueText {
-    font-size: .8rem;
   }
 
   .logoDestaques {

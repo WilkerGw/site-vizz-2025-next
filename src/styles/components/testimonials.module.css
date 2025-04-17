@@ -1,41 +1,31 @@
 .testimonials {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: .5rem;
+  justify-content: space-evenly;
   position: relative;
-  height: 100vh;
   overflow: hidden;
-  background-color: #eeeeee;
+  padding: 2.5rem 0.5rem;
+  height: 100vh;
+  background-color: var(--preto);
+  color: var(--branco);
 }
 
 .container__testimonials {
-  background-color: transparent;
   width: 100%;
   overflow: hidden;
 }
 
-.galleryTitle {
-  font-size: 2rem;
-  text-transform: uppercase;
-  font-family: "Archivo Black", sans-serif;
-  color: #2e2e2e;
-  text-align: start;
-  width: 100%;
+.galleryTitle,
+.cardName {
+  color: var(--amarelo);
 }
 
-.subtitle {
-  color: #2e2e2e;
-  margin-block: 1rem;
-  text-align: start;
-  width: 100%;
-}
-
-.spanTestm {
-  color: #ffdd56;
-  font-weight: bold;
-  text-shadow: 0px 0px 5px #2e2e2e;
+.subtitle,
+.galleryTitle,
+.cardName,
+.cardComment,
+.convite {
+  text-align: center;
 }
 
 .container__testimonials {
@@ -55,7 +45,6 @@
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
-  border-radius: 0.5rem;
   padding: 1.5rem;
   width: 250px;
   transition: transform 0.3s ease;
@@ -67,23 +56,8 @@
   transform: scale(1.05);
 }
 
-
-.cardName {
-  font-size: 1.25rem;
-  font-weight: bold;
-  color: #ffdd56;
-  margin-bottom: 0.5rem;
-  z-index: 1;
-  font-family: 'Archivo Black', sans-serif;
-  text-shadow: 0px 0px 5px #2e2e2e;
-}
-
 .cardComment {
-  font-size: 1rem;
-  color: #2e2e2e;
-  z-index: 1;
 }
-
 
 @keyframes marqueeAnimation {
   0% {
@@ -91,86 +65,5 @@
   }
   100% {
     transform: translateX(-50%);
-  }
-}
-
-@media (max-width: 768px) {
-
-  .testimonials {
-    height: 100vh;
-    padding-top: 7rem;
-  }
-
-  .galleryTitle {
-    font-size: 1.5rem;
-  }
-
-  .subtitle {
-    font-size: 1rem;
-  }
-
-  .card {
-    width: 200px;
-  }
-
-  .cardImage {
-    width: 60px;
-    height: 60px;
-  }
-
-  .cardName {
-    font-size: 1rem;
-  }
-
-  .cardComment {
-    font-size: 0.9rem;
-  }
-
-  .marquee {
-    animation-duration: 40s;
-  }
-}
-
-@media (max-width: 425px) {
-  .galleryTitle {
-    font-size: 1rem;
-  }
-
-  .subtitle {
-    font-size: .8rem;
-  }
-
-  .card {
-    width: 200px;
-  }
-
-  .cardImage {
-    width: 50px;
-    height: 50px;
-  }
-
-  .cardName {
-    font-size: 0.9rem;
-  }
-
-  .cardComment {
-    font-size: 0.8rem;
-  }
-
-  .marquee {
-    animation-duration: 50s;
-  }
-
-  .filter__mobile {
-    display: none;
-  }
-}
-
-@media (max-width: 375px) {
-  .galleryTitle {
-    font-size: 1rem;
-  }
-  .subtitle {
-    font-size: .8rem;
   }
 }

@@ -56,7 +56,7 @@ const Features = () => {
               </h1>
               <p>{service.description}</p>
             </div>
-            <img src={service.image} alt="" className={styles.imageService} />
+            <img src={service.image} alt="" className={styles.image} />
             {service.images && (
               <div className={styles.imageGallery}>
                 {service.images.map((image, imgIndex) => (
@@ -64,7 +64,7 @@ const Features = () => {
                     key={imgIndex}
                     src={image}
                     alt={`Imagem ${imgIndex + 1}`}
-                    className={styles.image}
+                    className={styles.imageRede}
                   />
                 ))}
               </div>
