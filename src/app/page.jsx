@@ -8,7 +8,6 @@ import Footer from "../components/Footer"; // Certifique-se de que Footer é exp
 import "../styles/animations.css"; // Importa animações globais
 import Gallery from "@components/Gallery";
 import Contact from "@components/Contact";
-import Appointment from "@components/Appointment";
 import Compra from "@components/Compra";
 import WhatsApp from "@components/WhatsApp";
 
@@ -21,7 +20,6 @@ export default function Home() {
       <Compra />
       <Gallery />
       <Contact />
-      <Appointment />
       <Testimonials />
       <WhatsApp />
       <Footer />

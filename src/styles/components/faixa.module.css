@@ -1,7 +1,7 @@
 /* Marquee.module.css */
 .marqueeContainer {
   background: linear-gradient(10deg, #ffdd56,#ffe680, #ffec9f);
-  color: #2e2e2e;
+  color: #5e5e5e;
   font-family: 'Archivo Black', sans-serif;
   text-transform: uppercase;
   padding: .5rem 0;
@@ -18,7 +18,7 @@
 
 .linkFaixa {
   width: 100%;
-  color: #2e2e2e;
+  color: #5e5e5e;
   text-decoration: none;
 }
 
@@ -30,16 +30,12 @@
 }
 
 .marqueeContent p {
-  font-size: 1.25rem;
   font-weight: 600;
   padding: 0 1rem; /* Reduzido o espaçamento */
   flex: 0 0 auto;
   margin: 0;
 }
 
-.spanFaixa {
-  font-size: 1.3rem;
-}
 
 @keyframes marquee {
   0% {
@@ -65,7 +61,6 @@
     }
 
     .marqueeContent p {
-      font-size: 1rem;
       padding: 0 0.5rem;
     }
   }

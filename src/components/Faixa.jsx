@@ -5,37 +5,37 @@ export default function Faixa () {
       <div className={styles.marqueeContainer}>
         <a href="https://www.oticasvizz.com.br/#agendamento" className={styles.linkFaixa}>
           <div className={styles.marqueeContent}>
-            <p>Agende seu exame <span className={styles.spanFaixa}>gratuitamente !</span></p>
+            <p>Exame de vista gratuito <span className={styles.spanFaixa}>21/05 - Quarta-feira.</span></p>
             <img src="./images/logo-cinza.png" className={styles.logoFaixa} alt="" />
-            <p>Agende seu exame <span className={styles.spanFaixa}>gratuitamente !</span></p>
+            <p>Exame de vista gratuito <span className={styles.spanFaixa}>21/05 - Quarta-feira.</span></p>
             <img src="./images/logo-cinza.png" className={styles.logoFaixa} alt="" />
-            <p>Agende seu exame <span className={styles.spanFaixa}>gratuitamente !</span></p>
+            <p>Exame de vista gratuito <span className={styles.spanFaixa}>21/05 - Quarta-feira.</span></p>
             <img src="./images/logo-cinza.png" className={styles.logoFaixa} alt="" />
-            <p>Agende seu exame <span className={styles.spanFaixa}>gratuitamente !</span></p>
+            <p>Exame de vista gratuito <span className={styles.spanFaixa}>21/05 - Quarta-feira.</span></p>
             <img src="./images/logo-cinza.png" className={styles.logoFaixa} alt="" />
-            <p>Agende seu exame <span className={styles.spanFaixa}>gratuitamente !</span></p>
+            <p>Exame de vista gratuito <span className={styles.spanFaixa}>21/05 - Quarta-feira.</span></p>
             <img src="./images/logo-cinza.png" className={styles.logoFaixa} alt="" />
-            <p>Agende seu exame <span className={styles.spanFaixa}>gratuitamente !</span></p>
+            <p>Exame de vista gratuito <span className={styles.spanFaixa}>21/05 - Quarta-feira.</span></p>
             <img src="./images/logo-cinza.png" className={styles.logoFaixa} alt="" />
-            <p>Agende seu exame <span className={styles.spanFaixa}>gratuitamente !</span></p>
+            <p>Exame de vista gratuito <span className={styles.spanFaixa}>21/05 - Quarta-feira.</span></p>
             <img src="./images/logo-cinza.png" className={styles.logoFaixa} alt="" />
-            <p>Agende seu exame <span className={styles.spanFaixa}>gratuitamente !</span></p>
+            <p>Exame de vista gratuito <span className={styles.spanFaixa}>21/05 - Quarta-feira.</span></p>
             <img src="./images/logo-cinza.png" className={styles.logoFaixa} alt="" />
-            <p>Agende seu exame <span className={styles.spanFaixa}>gratuitamente !</span></p>
+            <p>Exame de vista gratuito <span className={styles.spanFaixa}>21/05 - Quarta-feira.</span></p>
             <img src="./images/logo-cinza.png" className={styles.logoFaixa} alt="" />
-            <p>Agende seu exame <span className={styles.spanFaixa}>gratuitamente !</span></p>
+            <p>Exame de vista gratuito <span className={styles.spanFaixa}>21/05 - Quarta-feira.</span></p>
             <img src="./images/logo-cinza.png" className={styles.logoFaixa} alt="" />
-            <p>Agende seu exame <span className={styles.spanFaixa}>gratuitamente !</span></p>
+            <p>Exame de vista gratuito <span className={styles.spanFaixa}>21/05 - Quarta-feira.</span></p>
             <img src="./images/logo-cinza.png" className={styles.logoFaixa} alt="" />
-            <p>Agende seu exame <span className={styles.spanFaixa}>gratuitamente !</span></p>
+            <p>Exame de vista gratuito <span className={styles.spanFaixa}>21/05 - Quarta-feira.</span></p>
             <img src="./images/logo-cinza.png" className={styles.logoFaixa} alt="" />
-            <p>Agende seu exame <span className={styles.spanFaixa}>gratuitamente !</span></p>
+            <p>Exame de vista gratuito <span className={styles.spanFaixa}>21/05 - Quarta-feira.</span></p>
             <img src="./images/logo-cinza.png" className={styles.logoFaixa} alt="" />
-            <p>Agende seu exame <span className={styles.spanFaixa}>gratuitamente !</span></p>
+            <p>Exame de vista gratuito <span className={styles.spanFaixa}>21/05 - Quarta-feira.</span></p>
             <img src="./images/logo-cinza.png" className={styles.logoFaixa} alt="" />
-            <p>Agende seu exame <span className={styles.spanFaixa}>gratuitamente !</span></p>
+            <p>Exame de vista gratuito <span className={styles.spanFaixa}>21/05 - Quarta-feira.</span></p>
             <img src="./images/logo-cinza.png" className={styles.logoFaixa} alt="" />
-            <p>Agende seu exame <span className={styles.spanFaixa}>gratuitamente !</span></p>
+            <p>Exame de vista gratuito <span className={styles.spanFaixa}>21/05 - Quarta-feira.</span></p>
             <img src="./images/logo-cinza.png" className={styles.logoFaixa} alt="" />
           </div>
         </a>
