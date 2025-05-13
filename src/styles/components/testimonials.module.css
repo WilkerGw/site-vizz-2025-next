@@ -7,7 +7,7 @@
   padding: 2.5rem 0.5rem;
   height: 100vh;
   background-color: var(--preto);
-  color: var(--branco);
+  color:#5e5e5e;
 }
 
 .container__testimonials {
@@ -43,7 +43,7 @@
   flex-direction: row;
   gap: 2rem;
   animation: marqueeAnimation 30s linear infinite;
-  width: fit-content; /* Garante que o .marquee tenha uma largura adequada */
+  width: fit-content; 
 }
 
 .card {
@@ -65,6 +65,10 @@
 
 
 .cardComment {
+  background-color: #eeeeee;
+  padding: 1rem;
+  border-radius: .5rem;
+  margin-top: .5rem;
 }
 
 @keyframes marqueeAnimation {

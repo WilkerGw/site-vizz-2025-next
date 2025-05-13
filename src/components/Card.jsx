@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from '../styles/components/gallery.module.css';
 
-const Card = ({ name, mainImage, extraImages, onMainImageClick }) => {
+const Card = ({ name, mainImage, extraImages, price, promoPrice, onMainImageClick }) => {
   const [currentImage, setCurrentImage] = useState(mainImage);
 
   return (
@@ -13,6 +13,10 @@ const Card = ({ name, mainImage, extraImages, onMainImageClick }) => {
         onClick={onMainImageClick}
       />
       <h3 className={styles.cardName}>{name}</h3>
+      <div className={styles.priceContainer}>
+        <p className={styles.price}><span>De: </span>{price}</p>
+        <p className={styles.promoPrice}><span>Por: </span>{promoPrice}</p>
+      </div>
     </div>
   );
 };

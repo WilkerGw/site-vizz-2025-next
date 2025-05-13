@@ -5,10 +5,11 @@
   align-items: center;
   position: relative;
   height: auto;
-  background-image: url("../../../public/images/background.png");
+  /*background-image: url("../../../public/images/background.png");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;*/
+  background-color: #5e5e5e;
   color: #eeeeee;
 }
 
@@ -58,7 +59,7 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  margin: .2rem auto;
+  margin: 0.2rem auto;
 }
 
 .btn:hover {
@@ -73,14 +74,14 @@
   width: 1.5rem;
 }
 
-.contatos{
+.contatos {
   display: flex;
   width: 100%;
   height: auto;
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  margin: .5rem 0rem 1rem 0rem;
+  margin: 0.5rem 0rem 1rem 0rem;
 }
 
 .redeImg {
@@ -91,5 +92,4 @@
   .redeImg {
     width: 1.5rem;
   }
-  
 }

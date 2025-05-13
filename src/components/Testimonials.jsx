@@ -71,12 +71,6 @@ const Testimonials = () => {
   return (
     <section id="depoimentos" className={styles.testimonials}>
       <div className={styles.testimonialsInfos}>
-        <h2 className={styles.galleryTitle}>
-          O Que Nossos <span className={styles.spanTestm}>Clientes Dizem</span>
-        </h2>
-        <p className={styles.subtitle}>
-          Confira os depoimentos de quem já experimentou nossos serviços.
-        </p>
       </div>
       <div className={styles.container__testimonials}>
         <div className={styles.container__testimonials}>
