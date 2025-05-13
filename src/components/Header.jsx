@@ -21,7 +21,7 @@ const Header = () => {
           <Link href="#servicos" className={styles.link} onClick={closeMenu}>Servicos</Link>
           <Link href="#destaques" className={styles.link} onClick={closeMenu}>Destaques</Link>
           <Link href="#contato" className={styles.link} onClick={closeMenu}>Contato</Link>
-          <Link href="#agendamento" className={styles.link} onClick={closeMenu}>Agendamento</Link>
+          <Link href="https://agendamento-on-front.vercel.app/" className={styles.link} onClick={closeMenu} target='_blank'>Agendamento</Link>
           <Link href="https://oticasvizz.lojavirtualnuvem.com.br/" className={styles.link} onClick={closeMenu} target='_blank'>Comprar</Link>
           <Link href="#depoimentos" className={styles.link} onClick={closeMenu}>Depoimentos</Link>
         </div>
@@ -40,7 +40,7 @@ const Header = () => {
           <Link href="#servicos" className={styles.mobileLink} onClick={closeMenu}>Servicos</Link>
           <Link href="#destaques" className={styles.mobileLink} onClick={closeMenu}>Destaques</Link>
           <Link href="#contato" className={styles.mobileLink} onClick={closeMenu}>Contato</Link>
-          <Link href="#agendamento" className={styles.mobileLink} onClick={closeMenu}>Agendamento</Link>
+          <Link href="https://agendamento-on-front.vercel.app/" className={styles.mobileLink} onClick={closeMenu} target='_blank'>Agendamento</Link>
           <Link href="https://oticasvizz.lojavirtualnuvem.com.br/" className={styles.mobileLink} onClick={closeMenu} target='_blank'>Comprar</Link>
           <Link href="#depoimentos" className={styles.mobileLink} onClick={closeMenu}>Depoimentos</Link>
         </div>
