@@ -20,7 +20,7 @@ const CompraSegura = () => {
         </p>
       </div>
       <div className={styles.imgContainer}>
-        <img src="/images/homem-notebook.png" alt="" className={styles.img} />
+        <img src="/images/homem-sentado.png" alt="" className={styles.img} />
       </div>
     </section>
   );
