@@ -10,7 +10,7 @@ const Testimonials = () => {
         "Amei a ótica, fácil acesso e com ampla variedade. Parabéns pelo atendimento e paciência em cada detalhe. Qualidade muito boa, recomendo e irei comprar novamente. Obrigada.",
     },
     {
-      name: "Felipe Thum Marin",
+      name: "Felipe T Marin",
       comment: "Ótimo atendimento e com boa variedade de produtos. Recomendo!",
     },
     {
@@ -29,7 +29,7 @@ const Testimonials = () => {
         "Super indico a Óticas Vizz, atendimento sensacional. Adquiri dois óculos, e estou amando a qualidade. Com certeza vou indicar para meus familiares e amigos.",
     },
     {
-      name: "Paulo Ricardo Brandão",
+      name: "Paulo R Brandão",
       comment:
         "A loja tem produtos excelentes e o atendimento é ótimo!! Recomendo dmais!!",
     },
@@ -88,8 +88,12 @@ const Testimonials = () => {
           >
             {[...testimonials, ...testimonials].map((testimonial, index) => (
               <div key={index} className={styles.card}>
-                <h3 className={styles.cardName}>{testimonial.name}</h3>
-                <p className={styles.cardComment}>{testimonial.comment}</p>
+                <div className={styles.titleContainer}>
+                  <h3 className={styles.cardName}>{testimonial.name}</h3>
+                </div>
+                <div className={styles.testmonialContainer}>
+                  <p className={styles.cardComment}>{testimonial.comment}</p>
+                </div>
               </div>
             ))}
           </div>

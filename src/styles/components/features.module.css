@@ -30,6 +30,10 @@
   width: 6rem;
 }
 
+.description{
+  opacity: .7;
+}
+
 @media (min-width: 768px) {
   .service{
     flex-direction: row;

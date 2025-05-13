@@ -13,22 +13,22 @@ const Features = () => {
             title: "Exame de Vista",
             highlight: "Gratuito",
             description:
-              "Agende seu exame de vista gratuito com profissionais qualificados. Cuidamos da sua saúde ocular com precisão e sem custo.",
-            image: "/images/mulher-sentada.png",
+              "Cuidamos da sua saúde ocular com precisão, usando o que há de mais moderno em aparelhos optométricos. E sem custo!",
+            image: "/images/equipamento.png",
           },
           {
             title: "Fabricação de Óculos de Grau",
             highlight: "Personalizados",
             description:
               "Criamos óculos sob medida para você! Escolha a armação perfeita e conte com lentes adaptadas às suas necessidades.",
-            image: "/images/homem-sentado.png",
+            image: "/images/oculos2.png",
           },
           {
             title: "Consultoria com",
             highlight: "Especialistas",
             description:
-              "Nossa equipe está pronta para te ajudar a escolher o melhor óculos para o seu estilo e conforto, garantindo qualidade e bem-estar.",
-            image: "/images/mulher2-sentada.png",
+              "Agende uma consulta com um profissional Optometrista. Nossa equipe está pronta para te ajudar a escolher o melhor óculos para o seu estilo e conforto, garantindo qualidade e bem-estar.",
+            image: "/images/opto.png",
           },
           {
             title: "Trabalhamos com as",
@@ -54,7 +54,7 @@ const Features = () => {
                 {service.title}{" "}
                 <span className={styles.span}>{service.highlight}</span>
               </h1>
-              <p>{service.description}</p>
+              <p className={styles.description}>{service.description}</p>
             </div>
             <img src={service.image} alt="" className={styles.image} />
             {service.images && (

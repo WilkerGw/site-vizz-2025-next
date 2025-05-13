@@ -1,6 +1,6 @@
 /* Marquee.module.css */
 .marqueeContainer {
-  background: linear-gradient(10deg, #ffdd56,#ffe680, #ffec9f);
+  background: linear-gradient(to right, #ffe57b, #ffcc00);
   color: #5e5e5e;
   font-family: 'Archivo Black', sans-serif;
   text-transform: uppercase;
