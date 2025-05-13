@@ -55,7 +55,7 @@ const Hero = () => {
           <span className={styles.span}>exame de vista gratuito</span>
         </p>
         <a
-          href="https://agendamento-on-front.vercel.app/"
+          href="https://agendamento-on-front.vercel.app/agendamento"
           className={styles.linkBtn}
           target="_blank"
         >
