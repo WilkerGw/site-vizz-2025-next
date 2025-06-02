@@ -6,6 +6,7 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <section id="home" className={`${styles.hero} fade-in`}>
+      <div className={styles.filter}></div>
       <div className={styles.containerLogo}>
         <img src="/images/logo.png" alt="" className={styles.logoHero} />
       </div>

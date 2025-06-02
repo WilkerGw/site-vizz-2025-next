@@ -5,17 +5,27 @@
   align-items: center;
   position: relative;
   height: auto;
-  /*background-image: url("../../../public/images/background.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;*/
-  background-color: #5e5e5e;
   color: #eeeeee;
+  background-image: url("../../../public/images/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000b6;
+  z-index: 1;
 }
 
 .containerLogo {
   width: 8rem;
   max-width: 12rem;
+  z-index: 1;
 }
 
 .title {
@@ -31,6 +41,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  z-index: 1;
 }
 
 .span {
@@ -44,7 +55,7 @@
 
 .btn {
   background: linear-gradient(to left, #ffe57b, #ffcc00);
-  color: var(--preto);
+  color: #5e5e5e;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   border: none;
