@@ -14,6 +14,7 @@ const Header = () => {
 
   return (
     <header className={styles.header}>
+      <div className={styles.filter}></div>
       <nav className={styles.nav}>
         <a href="#home"><img src="/images/logo.png" alt="" className={styles.logo} /></a>
         <div className={`${styles.navLinks} ${isOpen ? styles.active : ''}`}>
