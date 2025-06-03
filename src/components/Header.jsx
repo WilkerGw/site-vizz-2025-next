@@ -24,7 +24,6 @@ const Header = () => {
           <Link href="#contato" className={styles.link} onClick={closeMenu}>Contato</Link>
           <Link href="https://agendamento-on-front.vercel.app/agendamento" className={styles.link} onClick={closeMenu} target='_blank'>Agendamento</Link>
           <Link href="https://oticasvizz.lojavirtualnuvem.com.br/" className={styles.link} onClick={closeMenu} target='_blank'>Comprar</Link>
-          <Link href="#depoimentos" className={styles.link} onClick={closeMenu}>Depoimentos</Link>
         </div>
         <button
           className={styles.hamburger}
@@ -43,7 +42,6 @@ const Header = () => {
           <Link href="#contato" className={styles.mobileLink} onClick={closeMenu}>Contato</Link>
           <Link href="https://agendamento-on-front.vercel.app/agendamento" className={styles.mobileLink} onClick={closeMenu} target='_blank'>Agendamento</Link>
           <Link href="https://oticasvizz.lojavirtualnuvem.com.br/" className={styles.mobileLink} onClick={closeMenu} target='_blank'>Comprar</Link>
-          <Link href="#depoimentos" className={styles.mobileLink} onClick={closeMenu}>Depoimentos</Link>
         </div>
       )}
     </header>

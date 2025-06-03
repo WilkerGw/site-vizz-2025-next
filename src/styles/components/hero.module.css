@@ -100,6 +100,9 @@
 }
 
 @media (min-width: 768px) {
+  .hero {
+    height: 100vh;
+  }
   .redeImg {
     width: 1.5rem;
   }
