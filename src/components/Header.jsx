@@ -22,7 +22,7 @@ const Header = () => {
           <Link href="#servicos" className={styles.link} onClick={closeMenu}>Servicos</Link>
           <Link href="#destaques" className={styles.link} onClick={closeMenu}>Destaques</Link>
           <Link href="#contato" className={styles.link} onClick={closeMenu}>Contato</Link>
-          <Link href="https://agendamento-on-front.vercel.app/agendamento" className={styles.link} onClick={closeMenu} target='_blank'>Agendamento</Link>
+          <Link href="https://agendamento-online-front.vercel.app/" className={styles.link} onClick={closeMenu} target='_blank'>Agendamento</Link>
           <Link href="https://oticasvizz.lojavirtualnuvem.com.br/" className={styles.link} onClick={closeMenu} target='_blank'>Comprar</Link>
         </div>
         <button

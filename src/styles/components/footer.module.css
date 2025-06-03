@@ -1,7 +1,7 @@
 .footer{
   background-color: var(--preto);
   color: var(--branco);
-  padding-inline: .5rem;
+  padding: 1rem;
 }
 .footerContent {
   display: flex;

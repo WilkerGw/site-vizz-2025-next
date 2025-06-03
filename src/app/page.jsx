@@ -9,6 +9,7 @@ import Contact from "@components/Contact";
 import Compra from "@components/Compra";
 import WhatsApp from "@components/WhatsApp";
 import Gallery from "@components/Gallery";
+import CustomerReviews from "@components/CustomerReviews";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Gallery/>
       <Contact />
       <WhatsApp />
+      <CustomerReviews/>
       <Footer />
     </>
   );
