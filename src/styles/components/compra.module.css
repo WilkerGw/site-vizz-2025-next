@@ -7,14 +7,17 @@
   text-align: center;
 }
 
+.title {
+  color: #5e5e5e;
+}
+
 .img {
   width: 20rem;
 }
 
 .text {
-  text-align: justify;
-  width: 90%;
-  hyphens: auto;
+  width: 80%;
+  opacity: .7;
 }
 
 .infosContainer {
@@ -25,15 +28,10 @@
 }
 
 @media (min-width: 768px) {
-  .compraSegura {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
+
   .infosContainer {
     display: flex;
     flex-direction: column;
-    width: 40%;
   }
   .img {
     margin-left: 2rem;

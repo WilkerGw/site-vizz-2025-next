@@ -50,7 +50,7 @@ const Features = () => {
             viewport={{ once: true }}
           >
             <div className={styles.serviceInfo}>
-              <h1>
+              <h1 className={styles.title}>
                 {service.title}{" "}
                 <span className={styles.span}>{service.highlight}</span>
               </h1>

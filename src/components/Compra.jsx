@@ -9,14 +9,7 @@ const CompraSegura = () => {
           Suas compras são <span className={styles.span}>100% seguras!</span>
         </h1>
         <p className={styles.text}>
-          Na nossa loja, protegemos seus dados com tecnologia SSL, que
-          criptografa todas as informações enviadas durante a compra (como dados
-          pessoais e de pagamento). É como ter um "cadeado digital" que garante
-          a privacidade das suas transações. Além disso, seguimos rigorosamente
-          a LGPD (Lei Geral de Proteção de Dados), cuidando das suas informações
-          com responsabilidade e transparência. Seus dados só serão usados para
-          finalidades específicas e nunca serão compartilhados sem sua
-          autorização. Comprar aqui é rápido, fácil e totalmente seguro!
+          Nossa loja usa tecnologia SSL para proteger seus dados com criptografia, garantindo privacidade nas compras. Também seguimos a LGPD, usando suas informações com responsabilidade e apenas para fins específicos, sem compartilhamento sem autorização. Comprar aqui é rápido, fácil e seguro.
         </p>
       </div>
       <div className={styles.imgContainer}>

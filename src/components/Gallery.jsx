@@ -87,8 +87,8 @@ const Gallery = () => {
             name={product.name}
             mainImage={product.mainImage}
             extraImages={product.extraImages}
-            price={product.price} // Passando o preço
-            promoPrice={product.promoPrice} // Passando o preço promocional
+            price={product.price}
+            promoPrice={product.promoPrice}
             onMainImageClick={() => handleMainImageClick(product.mainImage, product.extraImages)}
           />
         ))}

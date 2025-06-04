@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../styles/components/footer.module.css";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -7,64 +8,31 @@ const Footer = () => {
       <div className={styles.container}>
         <div className={styles.footerContent}>
           <div className={styles.footerSection}>
-            <img src="/images/logo.png" alt="logo vizz" className={styles.logo}/>
+            <img
+              src="/images/logo.png"
+              alt="logo vizz"
+              className={styles.logo}
+            />
             <p className={styles.footerText}>Av Do Oratório, 4869</p>
             <p className={styles.footerText}>
-              Vila Industrial, São Paulo - SP, 03221200
+              Vila Industrial, São Paulo - SP, 03221-200
             </p>
-            <p className={styles.footerText}>Telefone: (11) 23628799</p>
+            <p className={styles.footerText}>Telefone: (11) 2362-8799</p>
             <p className={styles.footerText}>Email: oticasvizz@gmail.com</p>
-          </div>
-          <div className={styles.footerSection}>
-            <ul className={styles.footerList}>
-              <li className={styles.footerListItem}>
-                <a href="/" className={styles.footerLink}>
-                  Home
-                </a>
-              </li>
-              <li className={styles.footerListItem}>
-                <a href="#agendamento" className={styles.footerLink}>
-                  Agendamento
-                </a>
-              </li>
-              <li className={styles.footerListItem}>
-                <a href="#servicos" className={styles.footerLink}>
-                  Serviços
-                </a>
-              </li>
-              <li className={styles.footerListItem}>
-                <a href="#contato" className={styles.footerLink}>
-                  Contato
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className={styles.footerSection}>
-            <div className={styles.socialIcons}>
-              <a
-                href="https://facebook.com"
-                className={styles.socialIcon}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src="/images/face.png" alt="Facebook" className={styles.imgSocial}/>
-              </a>
-              <a
-                href="https://instagram.com"
-                className={styles.socialIcon}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src="/images/insta.png" alt="Instagram" className={styles.imgSocial}/>
-              </a>
-              <a href="https://wa.me/551123628799" className={styles.socialIcon}>
-                <img src="/images/whats.png" alt="wahtsapp" className={styles.imgSocial}/>
-              </a>
-            </div>
           </div>
         </div>
         <div className={styles.copyright}>
-          <p>&copy; 2025 Ótica Vizz. Todos os direitos reservados..</p>
+          <p className={styles.texto}>
+            &copy; 2025 Ótica Vizz. Todos os direitos reservados. |{" "}
+            <Link href="/politicas" className={styles.link} target="_blank">
+              Política de Privacidade |{" "}
+            </Link>
+            <Link href={"https://github.com/wilker-martins"} target="_blank" className={styles.link}>
+              <span className={styles.dev}>
+                 Desenvolvido por <strong>Wilker Martins</strong>
+              </span>
+            </Link>
+          </p>
         </div>
       </div>
     </footer>

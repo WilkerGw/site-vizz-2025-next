@@ -12,8 +12,8 @@ const Hero = () => {
       </div>
       <div className={styles.containerInfos}>
         <h1 className={styles.title}>
-          MELHOR <span className={styles.span}>PREÇO</span> E{" "}
-          <span className={styles.span}>QUALIDADE</span>
+          PREÇO <span className={styles.span}>JUSTO</span> E{" "}
+          QUALIDADE<span className={styles.span}> GARANTIDA</span>
         </h1>
         <p>Nos siga nas redes sociais: </p>
         <div className={styles.contatos}>
@@ -51,42 +51,50 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-        <p>
-          Agende seu{" "}
-          <span className={styles.span}>exame de vista gratuito</span>
-        </p>
-        <a
-          href="https://agendamento-online-front.vercel.app/"
-          className={styles.linkBtn}
-          target="_blank"
-        >
-          <button className={styles.btn}>
-            {" "}
-            <img src="./images/agenda.png" alt="" className={styles.btnIcon} />
-            Agendar
-          </button>
-        </a>
-        <p>
-          Vagas <span className={styles.span}>LIMITADAS!</span>
-        </p>
-        <div className={styles.lojaVirtualContainer}>
-          <p>
-            Visite a nossa <span className={styles.span}>Loja Virtual</span>
-          </p>
-          <a
-            href="https://oticasvizz.lojavirtualnuvem.com.br/"
-            className={styles.linkBtn}
-            target="_blank"
-          >
-            <button className={styles.btn}>
-              <img
-                src="./images/carrinho.png"
-                alt=""
-                className={styles.btnIcon}
-              />
-              COMPRAR
-            </button>
-          </a>
+        <div className={styles.btnContainer}>
+          <div className={styles.btnInfosContainer}>
+            <p>
+              Agende seu{" "}
+              <span className={styles.span}>exame de vista gratuito</span>
+            </p>
+            <a
+              href="https://agendamento-online-front.vercel.app/"
+              className={styles.linkBtn}
+              target="_blank"
+            >
+              <button className={styles.btn}>
+                {" "}
+                <img
+                  src="./images/agenda.png"
+                  alt=""
+                  className={styles.btnIcon}
+                />
+                Agendar
+              </button>
+            </a>
+            <p>
+              Vagas <span className={styles.span}>LIMITADAS!</span>
+            </p>
+          </div>
+          <div className={styles.btnInfosContainer}>
+            <p>
+              Visite a nossa <span className={styles.span}>Loja Virtual</span>
+            </p>
+            <a
+              href="https://oticasvizz.lojavirtualnuvem.com.br/"
+              className={styles.linkBtn}
+              target="_blank"
+            >
+              <button className={styles.btn}>
+                <img
+                  src="./images/carrinho.png"
+                  alt=""
+                  className={styles.btnIcon}
+                />
+                Comprar
+              </button>
+            </a>
+          </div>
         </div>
       </div>
       <Faixa />

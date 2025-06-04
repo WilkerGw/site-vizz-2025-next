@@ -1,49 +1,88 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import styles from '../styles/components/header.module.css';
-import { useState } from 'react';
+import Link from "next/link";
+import styles from "../styles/components/header.module.css";
+import { useEffect, useRef, useState } from "react";
+import { IoClose, IoMenu } from "react-icons/io5";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef(null);
 
-  // Função para fechar o menu ao clicar em um link
-  const closeMenu = () => {
-    setIsOpen(false);
-  };
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    if (isOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isOpen]);
+
+  const closeMenu = () => setIsOpen(false);
+  const toggleMenu = () => setIsOpen(!isOpen);
+
+  const links = [
+    { href: "#home", label: "Home" },
+    { href: "#servicos", label: "Serviços" },
+    { href: "#destaques", label: "Destaques" },
+    { href: "#contato", label: "Contato" },
+    { href: "/politicas", label: "Políticas", external: false },
+    { href: "https://agendamento-online-front.vercel.app/", label: "Agendamento", external: true },
+    { href: "https://oticasvizz.lojavirtualnuvem.com.br/", label: "Comprar", external: true },
+  ];
 
   return (
     <header className={styles.header}>
       <div className={styles.filter}></div>
-      <nav className={styles.nav}>
-        <a href="#home"><img src="/images/logo.png" alt="" className={styles.logo} /></a>
-        <div className={`${styles.navLinks} ${isOpen ? styles.active : ''}`}>
-          <Link href="#home" className={styles.link} onClick={closeMenu}>Home</Link>
-          <Link href="#servicos" className={styles.link} onClick={closeMenu}>Servicos</Link>
-          <Link href="#destaques" className={styles.link} onClick={closeMenu}>Destaques</Link>
-          <Link href="#contato" className={styles.link} onClick={closeMenu}>Contato</Link>
-          <Link href="https://agendamento-online-front.vercel.app/" className={styles.link} onClick={closeMenu} target='_blank'>Agendamento</Link>
-          <Link href="https://oticasvizz.lojavirtualnuvem.com.br/" className={styles.link} onClick={closeMenu} target='_blank'>Comprar</Link>
+
+      <nav className={styles.nav} ref={menuRef}>
+        <a href="#home">
+          <img src="/images/logo.png" alt="Logo" className={styles.logo} />
+        </a>
+
+        <div className={`${styles.navLinks} ${isOpen ? styles.active : ""}`}>
+          {links.map((link, index) => (
+            <Link
+              key={index}
+              href={link.href}
+              className={styles.link}
+              onClick={closeMenu}
+              target={link.external ? "_blank" : undefined}
+            >
+              {link.label}
+            </Link>
+          ))}
         </div>
-        <button
-          className={styles.hamburger}
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          <span className={`${styles.bar} ${isOpen ? styles.open : ''}`}></span>
-          <span className={`${styles.bar} ${isOpen ? styles.open : ''}`}></span>
-          <span className={`${styles.bar} ${isOpen ? styles.open : ''}`}></span>
+
+        <button className={styles.hamburger} onClick={toggleMenu}>
+          {isOpen ? <IoClose size={24} color="#eee" /> : <IoMenu size={24} color="#eee" />}
         </button>
       </nav>
-      {isOpen && (
-        <div className={styles.mobileNav}>
-          <Link href="#home" className={styles.mobileLink} onClick={closeMenu}>Home</Link>
-          <Link href="#servicos" className={styles.mobileLink} onClick={closeMenu}>Servicos</Link>
-          <Link href="#destaques" className={styles.mobileLink} onClick={closeMenu}>Destaques</Link>
-          <Link href="#contato" className={styles.mobileLink} onClick={closeMenu}>Contato</Link>
-          <Link href="https://agendamento-on-front.vercel.app/agendamento" className={styles.mobileLink} onClick={closeMenu} target='_blank'>Agendamento</Link>
-          <Link href="https://oticasvizz.lojavirtualnuvem.com.br/" className={styles.mobileLink} onClick={closeMenu} target='_blank'>Comprar</Link>
-        </div>
-      )}
+
+      {/* Menu Mobile */}
+      <div
+        className={`${styles.mobileNav} ${isOpen ? styles.show : ""}`}
+        style={{ maxHeight: isOpen ? "500px" : "0px" }} // ajuste da animação
+      >
+        {links.map((link, index) => (
+          <Link
+            key={index}
+            href={link.href}
+            className={styles.mobileLink}
+            onClick={closeMenu}
+            target={link.external ? "_blank" : undefined}
+          >
+            {link.label}
+          </Link>
+        ))}
+      </div>
     </header>
   );
 };
