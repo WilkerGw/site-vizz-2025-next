@@ -1,21 +1,28 @@
-import React, { useState } from 'react';
-import styles from '../styles/components/gallery.module.css';
+import React from 'react';
+import styles from '../styles/components/Card.module.css'; // Mude para o novo arquivo de estilo
+import { FaSearchPlus } from 'react-icons/fa';
 
-const Card = ({ name, mainImage, extraImages, price, promoPrice, onMainImageClick }) => {
-  const [currentImage, setCurrentImage] = useState(mainImage);
-
+const Card = ({ name, mainImage, price, promoPrice, onCardClick }) => {
   return (
-    <div className={styles.card}>
-      <img
-        src={currentImage}
-        alt={name}
-        className={styles.mainImage}
-        onClick={onMainImageClick}
-      />
-      <h3 className={styles.cardName}>{name}</h3>
-      <div className={styles.priceContainer}>
-        <p className={styles.price}><span>De: </span>{price}</p>
-        <p className={styles.promoPrice}><span>Por: </span>{promoPrice}</p>
+    // Agora o clique é no card inteiro para abrir o modal
+    <div className={styles.card} onClick={onCardClick}>
+      <div className={styles.imageContainer}>
+        <img
+          src={mainImage}
+          alt={name}
+          className={styles.mainImage}
+        />
+        <div className={styles.overlay}>
+          <FaSearchPlus className={styles.icon} />
+          <span>Ver Detalhes</span>
+        </div>
+      </div>
+      <div className={styles.infoContainer}>
+        <h3 className={styles.cardName}>{name}</h3>
+        <div className={styles.priceContainer}>
+          <p className={styles.price}>De: {price}</p>
+          <p className={styles.promoPrice}>Por: {promoPrice}</p>
+        </div>
       </div>
     </div>
   );

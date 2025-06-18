@@ -2,101 +2,71 @@ import React from "react";
 import styles from "../styles/components/hero.module.css";
 import Faixa from "./Faixa";
 import Link from "next/link";
+import {
+  FaInstagram,
+  FaFacebook,
+  FaWhatsapp,
+  FaCalendarAlt,
+  FaShoppingCart,
+} from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <section id="home" className={`${styles.hero} fade-in`}>
-      <div className={styles.filter}></div>
+    <section id="home" className={styles.hero}>
       <div className={styles.containerLogo}>
-        <img src="/images/logo.png" alt="" className={styles.logoHero} />
+        <img src="/images/logo.png" alt="Logo Óticas Vizz" className={styles.logoHero} />
       </div>
+
       <div className={styles.containerInfos}>
         <h1 className={styles.title}>
-          PREÇO <span className={styles.span}>JUSTO</span> E{" "}
-          QUALIDADE<span className={styles.span}> GARANTIDA</span>
+          PREÇO <span className={styles.span}>JUSTO</span> E QUALIDADE{" "}
+          <span className={styles.span}>GARANTIDA</span>
         </h1>
-        <p>Nos siga nas redes sociais: </p>
-        <div className={styles.contatos}>
-          <div className={styles.contato}>
-            <Link
-              href={"https://www.instagram.com/oticasvizz/ "}
-              target="_blank"
-            >
-              <img
-                src="./images/instaIcon.png"
-                alt="Instagram"
-                className={styles.redeImg}
-              />
+
+        <div className={styles.socialContainer}>
+          <p>Nos siga nas redes sociais:</p>
+          <div className={styles.socialLinks}>
+            <Link href="https://www.instagram.com/oticasvizz/" target="_blank" aria-label="Instagram">
+              <FaInstagram className={styles.socialIcon} />
             </Link>
-          </div>
-          <div className={styles.contato}>
-            <Link
-              href={"https://www.facebook.com/profile.php?id=61565492837095 "}
-              target="_blank"
-            >
-              <img
-                src="./images/faceIcon.png"
-                alt="Facebook"
-                className={styles.redeImg}
-              />
+            <Link href="https://www.facebook.com/profile.php?id=61565492837095" target="_blank" aria-label="Facebook">
+              <FaFacebook className={styles.socialIcon} />
             </Link>
-          </div>
-          <div className={styles.contato}>
-            <Link href={"https://wa.me/551123628799 "} target="_blank">
-              <img
-                src="./images/whatsIcon.png"
-                alt="WhatsApp"
-                className={styles.redeImg}
-              />
+            <Link href="https://wa.me/551123628799" target="_blank" aria-label="WhatsApp">
+              <FaWhatsapp className={styles.socialIcon} />
             </Link>
           </div>
         </div>
+
         <div className={styles.btnContainer}>
-          <div className={styles.btnInfosContainer}>
-            <p>
-              Agende seu{" "}
-              <span className={styles.span}>exame de vista gratuito</span>
-            </p>
-            <a
-              href="https://agendamento-online-front.vercel.app/"
-              className={styles.linkBtn}
-              target="_blank"
-            >
-              <button className={styles.btn}>
-                {" "}
-                <img
-                  src="./images/agenda.png"
-                  alt=""
-                  className={styles.btnIcon}
-                />
-                Agendar
-              </button>
-            </a>
-            <p>
-              Vagas <span className={styles.span}>LIMITADAS!</span>
-            </p>
-          </div>
-          <div className={styles.btnInfosContainer}>
-            <p>
-              Visite a nossa <span className={styles.span}>Loja Virtual</span>
-            </p>
-            <a
-              href="https://oticasvizz.lojavirtualnuvem.com.br/"
-              className={styles.linkBtn}
-              target="_blank"
-            >
-              <button className={styles.btn}>
-                <img
-                  src="./images/carrinho.png"
-                  alt=""
-                  className={styles.btnIcon}
-                />
-                Comprar
-              </button>
-            </a>
-          </div>
+          <a
+            href="https://agendamento-online-front.vercel.app/"
+            className={`${styles.btn} ${styles.btnPrimary}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaCalendarAlt />
+            <div className={styles.btnTextContainer}>
+              <span>Agende seu exame gratuito</span>
+              <small>Vagas LIMITADAS!</small>
+            </div>
+          </a>
+
+          <a
+            href="https://oticasvizz.lojavirtualnuvem.com.br/"
+            className={`${styles.btn} ${styles.btnSecondary}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaShoppingCart />
+            <div className={styles.btnTextContainer}>
+              <span>Visite nossa <span className={styles.span}>Loja Virtual</span></span>
+              <small>Compre online</small>
+            </div>
+          </a>
         </div>
       </div>
+
       <Faixa />
     </section>
   );
