@@ -12,10 +12,11 @@ import Gallery from "@components/Gallery";
 import CustomerReviews from "@components/CustomerReviews";
 import BlueLightFilter from "@components/BlueLightFilter";
 import ImageCompare from "@components/ImageCompare";
+import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <>
+    <div className={styles.main}>
       <Header />
       <Hero />
       <Features />
@@ -27,6 +28,6 @@ export default function Home() {
       <WhatsApp />
       <CustomerReviews/>
       <Footer />
-    </>
+    </div>
   );
 }
