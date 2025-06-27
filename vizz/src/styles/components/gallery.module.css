@@ -1,0 +1,58 @@
+.destaques {
+  padding: 5rem 1rem;
+  background-color: #f8f9fa; /* Fundo suave */
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.filterContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.filterButton {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #555;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filterButton:hover {
+  background-color: #f0f0f0;
+  border-color: #ccc;
+}
+
+.filterButton.active {
+  background-color: var(--amarelo);
+  color: #333;
+  border-color: var(--amarelo);
+  font-weight: 600;
+}
+
+.cardsGrid {
+  display: grid;
+  /* Grid responsivo: 2 colunas no mobile, ajustando para mais colunas em telas maiores */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}

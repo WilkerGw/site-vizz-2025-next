@@ -1,0 +1,157 @@
+.footer {
+  background-color: #1a1a1a; /* Um preto um pouco mais suave */
+  color: #a0a0a0; /* Um cinza claro para melhor legibilidade */
+  padding: 4rem 1rem 0; /* Mais padding no topo, sem padding embaixo (a barra de copyright terá o seu) */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: 1fr; /* Coluna única no mobile */
+  gap: 3rem;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+.footerColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza conteúdo no mobile */
+}
+
+.logo {
+  width: 8rem;
+  margin-bottom: 1rem;
+}
+
+.tagline {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  max-width: 300px;
+}
+
+.columnTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+/* Linha de destaque amarela sob os títulos */
+.columnTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 3px;
+  background-color: var(--amarelo);
+  border-radius: 2px;
+}
+
+.footerLinks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerLinks li {
+  margin-bottom: 0.8rem;
+}
+
+.footerLinks a {
+  color: #a0a0a0;
+  text-decoration: none;
+  transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.footerLinks a:hover {
+  color: var(--amarelo);
+  padding-left: 5px;
+}
+
+.footerColumn p {
+  margin: 0.2rem 0;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.socialIcons a {
+  color: #a0a0a0;
+  font-size: 1.8rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.socialIcons a:hover {
+  color: var(--amarelo);
+  transform: translateY(-3px);
+}
+
+.copyrightBar {
+  border-top: 1px solid #333;
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.copyrightBar p {
+  margin: 0;
+}
+
+.devContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.separator {
+  margin: 0 0.5rem;
+}
+
+.link {
+  color: #a0a0a0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #ffffff;
+}
+
+/* Media Query para Desktop */
+@media (min-width: 768px) {
+  .footerGrid {
+    grid-template-columns: 1.5fr 1fr 1fr; /* Coluna do logo um pouco maior */
+    text-align: left;
+  }
+
+  .footerColumn {
+    align-items: flex-start; /* Alinha à esquerda no desktop */
+  }
+
+  .columnTitle::after {
+    left: 0;
+    transform: translateX(0);
+  }
+
+  .copyrightBar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

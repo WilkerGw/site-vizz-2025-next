@@ -1,0 +1,133 @@
+.compraSegura {
+  padding: 5rem 1rem;
+  background-color: #ffffff; /* Fundo branco e limpo */
+  overflow: hidden; /* Evita barras de rolagem indesejadas da animação */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Efeito de "blob" decorativo atrás da imagem */
+.imageContainer::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(135deg, var(--amarelo) 0%, #ffd95b 100%);
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  animation: morph 8s ease-in-out infinite;
+  z-index: 1;
+}
+
+@keyframes morph {
+  0% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+  50% { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
+  100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+}
+
+
+.img {
+  position: relative;
+  width: 100%;
+  z-index: 2;
+  filter: drop-shadow(0 10px 15px rgba(0,0,0,0.15));
+}
+
+.infosContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  color: #333;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.span {
+  color: var(--amarelo);
+}
+
+.description {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #6c757d;
+  max-width: 500px;
+}
+
+.featuresList {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+.featureItem {
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+  gap: 1.5rem;
+}
+
+.featureIcon {
+  font-size: 2rem;
+  color: var(--amarelo);
+  background-color: #fff;
+  padding: 0.8rem;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.featureText h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.25rem;
+}
+
+.featureText p {
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+
+/* Media Query para layout em duas colunas no desktop */
+@media (min-width: 992px) {
+  .container {
+    flex-direction: row;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .imageContainer {
+    flex: 1; /* Ocupa uma parte do espaço flexível */
+  }
+
+  .infosContainer {
+    flex: 1.2; /* Ocupa um pouco mais de espaço */
+    align-items: flex-start;
+    text-align: left;
+  }
+}

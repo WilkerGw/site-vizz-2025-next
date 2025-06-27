@@ -1,0 +1,169 @@
+.reviewsSection {
+  background-color: #ffffff;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.title {
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  color: #333;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+.span {
+  color: var(--amarelo);
+}
+
+.carouselWrapper {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.reviewsContainer {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 2rem;
+  padding: 2rem; /* Adiciona um respiro nas laterais */
+  scroll-snap-type: x mandatory;
+  /* Garante que o snap leve em conta o padding */
+  scroll-padding: 2rem; 
+  /* Efeito de fade nas bordas */
+  -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+}
+
+/* Ocultar barra de rolagem (cross-browser) */
+.reviewsContainer::-webkit-scrollbar { display: none; }
+.reviewsContainer { -ms-overflow-style: none; scrollbar-width: none; }
+
+.reviewCard {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 12px;
+  padding: 2rem;
+  flex-shrink: 0;
+  /* LARGURA CORRIGIDA (Desktop) */
+  width: 350px; 
+  scroll-snap-align: start; /* Alinha o início do card com o início do container (considerando o padding) */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.reviewCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.1);
+}
+
+.quoteIcon {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 3rem;
+  color: #e9ecef;
+  z-index: 1;
+}
+
+.starRating {
+  color: #ffc107;
+  margin-bottom: 1rem;
+  z-index: 2;
+}
+
+.reviewComment {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+  flex-grow: 1;
+  z-index: 2;
+}
+
+.authorInfo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  z-index: 2;
+}
+
+.avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: var(--amarelo);
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.reviewName {
+  font-size: 1rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.arrowButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #555;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.arrowButton:hover:not(.disabled) {
+  background-color: var(--amarelo);
+  color: #333;
+  border-color: var(--amarelo);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.arrowButton.disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.left { left: 0px; }
+.right { right: 0px; }
+
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+  .carouselWrapper {
+    padding: 0;
+  }
+  
+  .reviewsContainer {
+    padding: 2rem 1rem;
+    scroll-padding: 1rem;
+  }
+  
+  .reviewCard {
+    /* LARGURA CORRIGIDA (Mobile) */
+    width: 90%; 
+  }
+
+  .arrowButton {
+    display: none; /* Em telas de toque, a navegação por setas é menos necessária */
+  }
+}

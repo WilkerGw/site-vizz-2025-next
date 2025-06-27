@@ -1,0 +1,159 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.modalContent {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 900px;
+  max-height: 90vh;
+  display: grid;
+  grid-template-columns: 1fr; /* Coluna única no mobile */
+  gap: 2rem;
+  padding: 2rem;
+  position: relative;
+  overflow-y: auto;
+}
+
+.closeButton {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #888;
+  cursor: pointer;
+  z-index: 10;
+  transition: color 0.2s ease;
+}
+
+.closeButton:hover {
+  color: #333;
+}
+
+.galleryContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainImageContainer {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.mainImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumbnailContainer {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.thumbnail {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: all 0.2s ease;
+}
+
+.thumbnail:hover {
+  opacity: 1;
+  border-color: var(--amarelo);
+}
+
+.thumbnail.active {
+  opacity: 1;
+  border-color: var(--amarelo);
+  transform: scale(1.05);
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.productName {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 1rem 0;
+}
+
+.productDescription {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.priceContainer {
+  margin-bottom: 2rem;
+}
+
+.price {
+  font-size: 1rem;
+  color: #888;
+  text-decoration: line-through;
+}
+
+.promoPrice {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--amarelo);
+}
+
+.buyButton {
+  background: linear-gradient(to right, #ffcc00, #ffe57b);
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+}
+
+.buyButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(255, 204, 0, 0.4);
+}
+
+/* Layout para Desktop */
+@media (min-width: 768px) {
+  .modalContent {
+    grid-template-columns: 1fr 1fr; /* Duas colunas */
+    overflow-y: hidden;
+  }
+}
