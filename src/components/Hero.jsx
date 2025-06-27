@@ -26,13 +26,13 @@ const Hero = () => {
         <div className={styles.socialContainer}>
           <p>Nos siga nas redes sociais:</p>
           <div className={styles.socialLinks}>
-            <Link href="https://www.instagram.com/oticasvizz/" target="_blank" aria-label="Instagram">
+            <Link href="https://www.instagram.com/oticasvizz/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <FaInstagram className={styles.socialIcon} />
             </Link>
-            <Link href="https://www.facebook.com/profile.php?id=61565492837095" target="_blank" aria-label="Facebook">
+            <Link href="https://www.facebook.com/profile.php?id=61565492837095" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
               <FaFacebook className={styles.socialIcon} />
             </Link>
-            <Link href="https://wa.me/551123628799" target="_blank" aria-label="WhatsApp">
+            <Link href="https://wa.me/551123628799" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
               <FaWhatsapp className={styles.socialIcon} />
             </Link>
           </div>

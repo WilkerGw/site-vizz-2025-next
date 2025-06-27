@@ -10,6 +10,8 @@ import Compra from "@components/Compra";
 import WhatsApp from "@components/WhatsApp";
 import Gallery from "@components/Gallery";
 import CustomerReviews from "@components/CustomerReviews";
+import BlueLightFilter from "@components/BlueLightFilter";
+import ImageCompare from "@components/ImageCompare";
 
 export default function Home() {
   return (
@@ -19,6 +21,8 @@ export default function Home() {
       <Features />
       <Compra />
       <Gallery/>
+      <ImageCompare/>
+      <BlueLightFilter/>
       <Contact />
       <WhatsApp />
       <CustomerReviews/>
