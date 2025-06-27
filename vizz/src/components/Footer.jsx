@@ -58,7 +58,7 @@ const Footer = () => {
               Política de Privacidade
             </Link>
             <span className={styles.separator}>|</span>
-            <a href="https://github.com/wilker-martins" target="_blank" rel="noopener noreferrer" className={styles.link}>
+            <a href="https://portfolio-wilker-frontend.vercel.app/" target="_blank" rel="noopener noreferrer" className={styles.link}>
               Desenvolvido por <strong>Wilker Martins</strong>
             </a>
           </div>
