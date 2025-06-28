@@ -40,9 +40,8 @@ const Hero = () => {
 
         <div className={styles.btnContainer}>
           <a
-            href="https://agendamento-online-front.vercel.app/"
+            href="/agendamento"
             className={`${styles.btn} ${styles.btnPrimary}`}
-            target="_blank"
             rel="noopener noreferrer"
           >
             <FaCalendarAlt />
