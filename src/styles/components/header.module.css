@@ -50,8 +50,8 @@
 }
 
 /* Estilo especial para agendamento */
-.link:nth-child(6),
-.mobileLink:nth-child(6) {
+.link:nth-child(5),
+.mobileLink:nth-child(5) {
   font-weight: bold;
   color: #ffdd56;
 }

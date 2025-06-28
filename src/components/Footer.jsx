@@ -54,12 +54,8 @@ const Footer = () => {
         <div className={styles.copyrightBar}>
           <p>&copy; {new Date().getFullYear()} Ótica Vizz. Todos os direitos reservados.</p>
           <div className={styles.devContainer}>
-            <Link href="/politicas" className={styles.link} target="_blank">
-              Política de Privacidade
-            </Link>
-            <span className={styles.separator}>|</span>
             <a href="https://portfolio-wilker-frontend.vercel.app/" target="_blank" rel="noopener noreferrer" className={styles.link}>
-              Desenvolvido por <strong>Wilker Martins</strong>
+              Desenvolvido por Wilker Martins
             </a>
           </div>
         </div>

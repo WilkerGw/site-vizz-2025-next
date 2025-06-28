@@ -11,9 +11,9 @@ const navLinks = [
   { href: "#servicos", label: "Serviços" },
   { href: "#destaques", label: "Destaques" },
   { href: "#contato", label: "Contato" },
-  { href: "/politicas", label: "Políticas" },
   { href: "/agendamento", label: "Agendamento"},
   { href: "https://oticasvizz.lojavirtualnuvem.com.br/", label: "Comprar", target: "_blank" },
+  { href: "/politicas", label: "Políticas" },
 ];
 
 const Header = () => {
