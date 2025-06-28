@@ -12,7 +12,7 @@ const navLinks = [
   { href: "#destaques", label: "Destaques" },
   { href: "#contato", label: "Contato" },
   { href: "/politicas", label: "Políticas" },
-  { href: "https://agendamento-online-front.vercel.app/", label: "Agendamento", target: "_blank" },
+  { href: "/agendamento", label: "Agendamento"},
   { href: "https://oticasvizz.lojavirtualnuvem.com.br/", label: "Comprar", target: "_blank" },
 ];
 
