@@ -60,7 +60,7 @@ const Hero = () => {
             <FaShoppingCart />
             <div className={styles.btnTextContainer}>
               <span>Visite nossa <span className={styles.span}>Loja Virtual</span></span>
-              <small>Compre online</small>
+              <small>Compre Online</small>
             </div>
           </a>
         </div>
